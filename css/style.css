@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+:root {
+    --border-radius: 9px;
+    --red-color: #C33748;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(242, 242, 242);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(196, 195, 195);
+    text-align: center;
+    height: 50px;
+    border-radius: var(--border-radius);
+}
+
+.header a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--red-color);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header a:hover{
+    background-color: var(--red-color);;
+    border-radius: var(--border-radius);
+    color: white;
+}
+
+/* entrada destacada */
+
+.entrada-destacada {
+    display: grid;
+    grid-template-columns: 60% auto;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+    height: 15em;
+}
+
+.entrada-destacada h5 {
+    color: rgb(145, 144, 144);
+    margin-bottom: 5px;
+}
+
+.entrada-destacada h2{
+    color: var(--red-color);;
+    margin-bottom: 5px;
+
+}
+
+.title-subtitle-parragraph {
+    margin: 20px;
+}
+
+
+.img-entrada-destacada{
+    background-image: url(/css/img/1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-sizing: border-box;
+    border: 10px solid white
+}
+
+/* Main */
+
+
+.main{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: var(--border-radius);
+    background-color: #fff;
+
+}
+ /* TARGET'S */
+.target-1 { 
+    display: grid;
+    grid-template-columns:auto 80% ;  
+    margin-bottom: 20px; 
+}
+
+.biografia {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.biografia p span {
+    color: var(--red-color);;
+}
+.biografia h6 {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.descripcion {
+    margin: 11px;
+}
+
+.descripcion h2 {
+    color: var(--red-color);;
+    margin-bottom: 5px;
+}
+
+.descripcion p {
+    margin-top: 15px;
+    
+}
+
+.descripcion p a {
+    text-decoration: none;
+    color: var(--red-color);;
+}
+
+/* Last-section */
+
+.last-section{
+    display: grid;
+    grid-template-columns:auto 70% ;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+    height: 10em;
+}
+
+.img-last-section {
+    background-image: url(/css/img/cat.jpg);
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-size: cover;
+    box-sizing: border-box;
+    border: 20px solid white;
+    border-radius: var(--border-radius);
+}
+
+.last-section .text{
+    margin: 15px;
+}
+
+ /* footer */
+
+footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twitter {
+    width: 40px;
+    margin-right: 5px;
+}
+.facebook{
+    width: 40px;
+    margin-right: 5px;
+}
+
+.youtube{
+    width: 40px;
+}
